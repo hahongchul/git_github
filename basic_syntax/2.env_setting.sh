@@ -37,3 +37,17 @@ git add .
 git commit -m "first commit"    
 git push origin master
 
+# 사용자 지정 방법
+# 전역적 사용자(이름, email) 지정
+git config --global user.name "사용자이름"
+git config --global user.email "사용자이메일"
+
+# 로컬 사용자(이름, email) 지정 : --local 또는 옵션 생략
+# 해당 프로젝트에서만 적용
+git config user.name "사용자이름"
+git config user.email "사용자이메일"
+
+# 사용자 정보 조회
+git config user.name
+git config user.email
+git config --list
