@@ -34,3 +34,5 @@ git log --graph
 # main 브랜치 뿐만 아니라 모든 브랜치의 커밋 이력을 조회 (fetch된 원격 브랜치 포함)
 git log --all
 
+# 충돌 무시하고 강제 push
+git push -f origin main
