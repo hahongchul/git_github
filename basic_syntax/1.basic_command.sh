@@ -43,5 +43,10 @@ git checkout 커밋ID
 # 다시 현재 브랜치의 commitID로 돌아오기
 git checkout main
 
-# 과거 특정 버전과 비교
-git diff 커밋ID1 커밋ID2
+# git pull은 원격의 변경사항을 local로 내려 받는 것 (원격지 변경사항을 로컬(working directory 포함)에 반영)
+# git pujj = git fetch + git merge
+git pull origin main
+
+# git fetch는 원격지 변경사항을 local repo로 내려 받는 것 (working directory에는 반영X)
+git fetch origin main
+
