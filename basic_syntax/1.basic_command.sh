@@ -50,3 +50,15 @@ git pull origin main
 # git fetch는 원격지 변경사항을 local repo로 내려 받는 것 (working directory에는 반영X)
 git fetch origin main
 
+# git 작업 취소
+# commit 이후의 취소
+git reset head~1
+git reset head^
+
+# staging area로 까지만 취소
+git reset --soft head~1
+
+# push 이후의 취소
+# 1. git revert : 되돌리기 위한 새로운 커밋을 생성 (안전한 방법)
+git revert 커밋ID  # commit 메시지 작성 vi 에디터 모드 -> wq!
+
