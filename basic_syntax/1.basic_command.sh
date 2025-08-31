@@ -42,3 +42,6 @@ git checkout 커밋ID
 
 # 다시 현재 브랜치의 commitID로 돌아오기
 git checkout main
+
+# 과거 특정 버전과 비교
+git diff 커밋ID1 커밋ID2
