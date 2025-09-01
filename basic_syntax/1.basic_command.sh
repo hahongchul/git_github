@@ -62,3 +62,8 @@ git reset --soft head~1
 # 1. git revert : 되돌리기 위한 새로운 커밋을 생성 (안전한 방법)
 git revert 커밋ID  # commit 메시지 작성 vi 에디터 모드 -> wq!
 
+# 작업 중인 사항을 임시 저장 (충돌상황에서 많이 사용)
+git stash
+
+# 저장한 최신의 작업목록을 꺼내기
+git stash pop
